@@ -11,3 +11,12 @@
 ### 2.安装pio
     export NETCDF_PATH=/public/home/gclearn/LIBRARY/netcdf4c
     CC=mpicc FC=mpifort ./configure -prefix=/public/home/gclearn/LIBRARY/pio --with-netcdf
+    
+    cmake版本
+    CC=mpicc FC=mpifort cmake -DNetCDF_C_PATH=/public/home/gclearn/LIBRARY/netcdf4c -DNetCDF_Fortran_PATH =/public/home/gclearn/LIBRARY/netcdf4c -DPnetCDF_PATH=/public/home/gclearn/LIBRARY/pnetcdf -DPIO_HDF5_LOGGING=On -DPIO_USE_MALLOC=On
+    
+## 安装MAPS
+    设置NETCDF PNETCDF PIO环境变量
+    export NETCDF=/public/home/gclearn/LIBRARY/netcdf4c
+    export PNETCDF=/public/home/gclearn/LIBRARY/pnetcdf
+    export PIO=/public/home/gclearn/LIBRARY/pio
