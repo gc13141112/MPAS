@@ -7,3 +7,7 @@
     make && make install
     CPPFLAGS=-I/public/home/gclearn/LIBRARY/netcdf4c/include LDFLAGS=-L/public/home/gclearn/LIBRARY/netcdf4c/lib ./configure -prefix=/public/home/gclearn/LIBRARY/netcdf4c CC=mpicc FC=mpifort
     make && make install
+    
+### 2.安装pio
+    export NETCDF_PATH=/public/home/gclearn/LIBRARY/netcdf4c
+    CC=mpicc FC=mpifort ./configure -prefix=/public/home/gclearn/LIBRARY/pio --with-netcdf
